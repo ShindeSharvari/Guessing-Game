@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f9f9f9;
+            background-image: url("images/cute-cartoon-numbers-vector.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <h2>Guess a number between 1 and 100.</h2>
+    <input type="number" id="guess" placeholder="Enter your guess" required>
+    <button onclick="makeGuess()">Submit</button>
+    <button onclick="exitGame()">Exit</button>
+    <div class="result" id="result"></div>
+
+    <script src="game.js"></script>
+</body>
+</html>
